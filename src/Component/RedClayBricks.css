@@ -1,0 +1,170 @@
+.redclaybricks-packages {
+    padding: 40px; 
+}
+
+.redclaybricks-packages h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px; 
+    font-size: 2.3rem; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    font-family: "Flamenco", system-ui;
+    font-weight: 800;
+}
+
+.redclaybricks-packages-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+}
+
+.redclaybricks-package {
+    background: linear-gradient(to right, #9ed9c9, #88accb);
+    border: 1px solid #ced4da; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    padding: 10px; 
+    flex: 1 1 calc(30% - 10px); 
+    max-width: calc(30% - 10px); 
+    background-color: #f8f9fa; 
+}
+
+.redclaybricks-package:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+}
+
+.redclaybricks-package-header {
+    background: #007bff; 
+    color: #fff; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s; 
+    font-size: 1.2rem; 
+    border-bottom: 2px solid #0056b3; 
+    border-radius: 8px; 
+}
+
+.redclaybricks-package-header h2 {
+    font-size: 26px;
+    margin: 0px;
+    font-family: "Flamenco", system-ui;
+}
+
+.redclaybricks-package-header p {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.redclaybricks-package-header:hover {
+    background: #0056b3; 
+}
+
+.redclaybricks-package-details {
+    padding: 15px;
+    border-radius: 8px; 
+}
+
+.redclaybricks-feature-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #e7f1ff; 
+    border-radius: 5px;
+    margin: 8px;
+    cursor: pointer;
+    transition: background 0.3s; 
+    font-size: 1rem; 
+    color: #0056b3; 
+}
+
+.redclaybricks-feature-details ul li span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.redclaybricks-feature-header h3 {
+    font-size: 17px;
+    margin: 2px;
+    font-family: "Flamenco", system-ui;
+}
+
+.redclaybricks-feature-header:hover {
+    background: #d0e2ff; 
+}
+
+.redclaybricks-feature-details {
+    padding: 10px 0; 
+    animation: fadeIn 0.3s; 
+}
+
+.redclaybricks-feature-details ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+.redclaybricks-feature-details ul li {
+    padding: 5px 0; 
+    border-bottom: 1px solid #e7e7e7; 
+}
+
+@media (max-width: 899px) {
+    .redclaybricks-package {
+        flex: 1 1 calc(30% - 10px); 
+        max-width: calc(30% - 10px); 
+    }
+}
+
+@media (max-width: 599px) {
+    .redclaybricks-package {
+        flex: 1 1 100%; 
+        max-width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .redclaybricks-packages h1 {
+        font-size: 1.2rem; 
+    }
+    .redclaybricks-packages {
+        padding: 20px;
+    }
+    .redclaybricks-package-header {
+        font-size: 1rem; 
+    }
+    .redclaybricks-package-header h2 {
+        font-size: 17px;
+    }
+    .redclaybricks-package-header p {
+        font-size: 15px;
+    }
+    .redclaybricks-feature-header h3 {
+        font-size: 16px;
+    }
+    .redclaybricks-feature-header {
+        font-size: 1rem; 
+        margin: 5px;
+    }
+    .redclaybricks-feature-details ul li span {
+        font-size: 14px;
+    }
+    .redclaybricks-feature-details ul li {
+        font-size: 14px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

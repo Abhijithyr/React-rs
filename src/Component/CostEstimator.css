@@ -1,0 +1,162 @@
+.cost-estimator-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to right, #9ed9c9, #88accb);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.cost-estimator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cost-estimator-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-family: "Flamenco", system-ui;
+  font-weight: 800;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+  font-family: "Flamenco", system-ui;
+  font-size: 20px;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  font-family: "Flamenco", system-ui;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-family: "Flamenco", system-ui;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+.cost-results {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cost-results h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cost-result {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.cost-result h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .cost-estimator-container {
+      padding: 15px;
+  }
+
+  .cost-estimator-form h2 {
+      font-size: 1.8rem;
+  }
+  .form-group label {
+    font-size: 18px;
+}
+
+  .form-group input,
+  .form-group select {
+      font-size: 1rem;
+  }
+
+  .submit-btn {
+      font-size: 1.1rem;
+  }
+
+  .cost-results h3 {
+      font-size: 1.2rem;
+  }
+
+  .cost-result h4 {
+      font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cost-estimator-container {
+      padding: 10px;
+  }
+
+  .cost-estimator-form h2 {
+      font-size: 1.6rem;
+  }
+
+  .form-group label {
+    font-size: 18px;
+}
+
+  .form-group input,
+  .form-group select {
+      font-size: 1rem;
+  }
+
+  .submit-btn {
+      font-size: 1.1rem;
+  }
+
+  .cost-results h3 {
+      font-size: 1rem;
+  }
+
+  .cost-result h4 {
+      font-size: 0.85rem;
+  }
+}

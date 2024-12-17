@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Logo1 from '../Component/Images/logo1.webp';
+import Logo1 from '../Component/Images/newlogo.webp';
 import { FacebookOutlined, TwitterOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons'; 
 
 const Footer = () => {

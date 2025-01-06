@@ -11,9 +11,9 @@
     display: block;
   }
 
-  div#root {
+  /* div#root {
     background-color: #cfedda;
-}
+} */
 
 .home_con_se_container {
   max-width: 1200px;
@@ -22,20 +22,19 @@
 }
 
 .hom_con_se_section_title h3 {
-  font-size: 38px;
+  font-size: 34px;
   text-align: center;
-  font-family: "Flamenco", system-ui;
-  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   margin: 10px 0px;
 }
 
 .hom_con_se_section_title p {
-  font-size: 22px;
-  color: #000;
+  font-size: 20px;
+  color: #615a5a;
   text-align: center;
   margin-bottom: 40px;
-  font-family: "Flamenco", system-ui;
-  font-weight: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 .home_con_se_row {
@@ -70,23 +69,23 @@
 }
 
 .hom_con_se_post-header h4 {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 15px;
-  font-family: "Flamenco", system-ui;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
 
 .hom_con_se_post-header .date {
   font-size: 17px;
   color: #000000;
-  font-family: "Flamenco", system-ui;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
 
 .services p {
   font-size: 20px;
   color: #000;
-  font-family: "Flamenco", system-ui;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
   overflow: hidden;
   display: -webkit-box;
@@ -126,7 +125,7 @@ hr {
   }
 
   .hom_con_se_section_title h3 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .services {
@@ -137,13 +136,14 @@ hr {
 .section-title {
   font-size: 2em;
   margin-bottom: 10px;
-  font-family: "Flamenco", system-ui;
-  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 .section-subtitle {
-  font-size: 22px;
-  font-family: "Flamenco", system-ui;
+  font-size: 20px;
+  /* font-family: "Flamenco", system-ui; */
+  font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -170,14 +170,14 @@ hr {
 }
 
 .bb-why-us__grid__title {
-  font-size: 22px;
+  font-size: 20px;
   margin: 10px 0;
-  font-family: "Flamenco", system-ui;
+  font-family: "Roboto", sans-serif;
 }
 
 .bb-why-us__grid__text {
   font-size: 18px;
-  font-family: "Flamenco", system-ui;
+  font-family: "Roboto", sans-serif;
   color: #000;
 }
 
@@ -204,5 +204,11 @@ hr {
 
   .bb-why-us__grid {
       min-width: 100%; 
+  }
+  .home_mn_carousel_image {
+    height: auto;
+  }
+  .home_mn_carousel_image {
+    height: 200px;
   }
 }

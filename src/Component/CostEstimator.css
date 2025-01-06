@@ -1,162 +1,203 @@
+/* General Styles */
 .cost-estimator-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background: linear-gradient(to right, #9ed9c9, #88accb);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  width: 100%;
+  /* padding: 20px; */
+}
+
+.hero {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0;
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
 .cost-estimator-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.cost-estimator-form h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-  font-family: "Flamenco", system-ui;
-  font-weight: 800;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0.1, 0.2, 0.3, 0.2);
+  animation: fadeIn 1s ease-in-out;
 }
 
 .form-group {
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.form-group label {
+label {
   font-weight: bold;
-  margin-bottom: 5px;
-  color: #444;
-  font-family: "Flamenco", system-ui;
-  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 8px;
+  color: #333;
 }
 
-.form-group input, .form-group select {
+input, select {
   width: 100%;
   padding: 12px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-  transition: border-color 0.3s;
-  font-family: "Flamenco", system-ui;
+  transition: all 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group select:focus {
-  border-color: #007bff;
+input:focus, select:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
   outline: none;
 }
 
 .submit-btn {
-  padding: 12px;
-  background-color: #007bff;
+  width: 100%;
+  padding: 15px;
+  background: #1e90ff;
   color: white;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
   border: none;
-  border-radius: 8px;
-  font-size: 1.4rem;
-  font-family: "Flamenco", system-ui;
-  font-weight: 800;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
-  transform: translateY(-1px);
+  background: #0044cc;
 }
 
 .cost-results {
   margin-top: 20px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
+  background: #e0e0e0;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.cost-results h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.cost-result {
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #e9ecef;
-  border-radius: 6px;
-  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
 .cost-result h4 {
-  margin: 0;
-  font-size: 1.1rem;
-  color: #333;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0;
 }
 
-@media (max-width: 768px) {
-  .cost-estimator-container {
-      padding: 15px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-
-  .cost-estimator-form h2 {
-      font-size: 1.8rem;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .form-group label {
-    font-size: 18px;
 }
 
-  .form-group input,
-  .form-group select {
-      font-size: 1rem;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .cost-estimator-form {
+    padding: 15px;
   }
 
   .submit-btn {
-      font-size: 1.1rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
   }
 
-  .cost-results h3 {
-      font-size: 1.2rem;
+  .hero-subtitle {
+    font-size: 1.3rem;
   }
 
-  .cost-result h4 {
-      font-size: 0.95rem;
+  .cost-estimator-form {
+    padding: 10px;
+  }
+
+  label {
+    text-align: left;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .cost-estimator-container {
-      padding: 10px;
+  .hero-title {
+    font-size: 1.8rem;
   }
 
-  .cost-estimator-form h2 {
-      font-size: 1.6rem;
+  .hero-subtitle {
+    font-size: 1.2rem;
   }
 
-  .form-group label {
-    font-size: 18px;
-}
-
-  .form-group input,
-  .form-group select {
-      font-size: 1rem;
+  .cost-estimator-form {
+    padding: 10px;
   }
 
   .submit-btn {
-      font-size: 1.1rem;
+    font-size: 1rem;
   }
+}
 
-  .cost-results h3 {
-      font-size: 1rem;
-  }
+/* Subheading Alignment */
+.cost-estimator-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-  .cost-result h4 {
-      font-size: 0.85rem;
-  }
+.cost-results h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Logo1 from '../Component/Images/logo1.webp';
+import Logo1 from '../Component/Images/newlogo.webp';
 import { FacebookOutlined, TwitterOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons'; 
 
 const Footer = () => {
@@ -39,10 +39,10 @@ const Footer = () => {
           <a href="https://instagram.com" rel="noreferrer"><InstagramOutlined /></a>
           <a href="https://linkedin.com" rel="noreferrer"><LinkedinOutlined /></a>         
 
-          <div className="footer_web_counter">
+          {/* <div className="footer_web_counter">
             <a href="https://www.hitwebcounter.com">
             <img src="https://hitwebcounter.com/counter/counter.php?page=16868024&style=0030&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>   
-          </div>
+          </div> */}
         </div>
       </div>
 

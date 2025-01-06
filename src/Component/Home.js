@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import Modal from "./Modal";
+// import Modal from "./Modal";
 import House1 from "../Component/Images/MnImage1.webp";
 import House2 from "../Component/Images/MnImage2.webp";
 import House3 from "../Component/Images/MnImage3.webp";
@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
 
-      <Modal />
+      {/* <Modal /> */}
 
       <div className="home_mn_carousel">
         <img

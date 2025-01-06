@@ -10,8 +10,8 @@
     font-size: 2.3rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: "Flamenco", system-ui;
-    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
 
 .concrete-blocks-packages-container {
@@ -22,7 +22,7 @@
 }
 
 .concrete-blocks-package {
-    background: linear-gradient(to right, #9ed9c9, #88accb);
+    /* background: linear-gradient(to right, #9ed9c9, #88accb); */
     border: 1px solid #ced4da; 
     border-radius: 10px; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
@@ -40,7 +40,7 @@
 }
 
 .concrete-blocks-package-header {
-    background: #007bff; 
+    background: #313a43; 
     color: #fff; 
     padding: 15px;
     display: flex;
@@ -49,19 +49,20 @@
     cursor: pointer;
     transition: background 0.3s; 
     font-size: 1.2rem; 
-    border-bottom: 2px solid #0056b3; 
+    /* border-bottom: 2px solid #0056b3;  */
     border-radius: 8px; 
 }
 
 .concrete-blocks-package-header h2 {
-    font-size: 26px;
+    font-size: 24px;
     margin: 0px;
-    font-family: "Flamenco", system-ui;
+    font-family: "Roboto", sans-serif;
 }
 
 .concrete-blocks-package-header p {
     font-size: 20px;
     margin: 0px;
+    font-family: "Roboto", sans-serif;
 }
 
 .concrete-blocks-package-header:hover {
@@ -78,13 +79,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    background: #e7f1ff; 
+    /* background: #e7f1ff;  */
     border-radius: 5px;
     margin: 8px;
     cursor: pointer;
     transition: background 0.3s; 
     font-size: 1rem;
-    color: #0056b3; 
+    color: #000; 
+    border: 1px solid #c5bdbd;
 }
 
 .concrete-blocks-feature-details ul li span {
@@ -95,7 +97,7 @@
 .concrete-blocks-feature-header h3 {
     font-size: 17px;
     margin: 2px;
-    font-family: "Flamenco", system-ui;
+    font-family: "Roboto", sans-serif;
 }
 
 .concrete-blocks-feature-header:hover {

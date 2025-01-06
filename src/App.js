@@ -33,7 +33,7 @@ function App() {
       <Route path='/packages' element={<Packages/>} />
       <Route path='/package/concrete-blocks' element={<ConcreteBlocks />} />
       <Route path='/package/redclaybricks' element={<RedClayBricks/>} />
-      <Route path='/package/commericialpackage' element={<CommericialPackage/>} />
+      <Route path='/package/commercialpackage' element={<CommericialPackage/>} />
       <Route path='/package/villapackage' element={<VillaPackage/>} />
       <Route path='/costestimator' element={<CostEstimator/>} />
       <Route path='/contact' element={<Contact/>} />

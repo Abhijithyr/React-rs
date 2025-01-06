@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './CostEstimator.css';
+import AOS from "aos"; // Import AOS
+import "aos/dist/aos.css"; // Import AOS styles
 import { toast } from 'react-toastify'; 
+import { CalculatorOutlined } from '@ant-design/icons';
+import Costestimator from "../Component/Images/Costestimator.png"; // Background image for heading
 
 const CostEstimator = () => {
   const [formData, setFormData] = useState({
@@ -14,7 +18,6 @@ const CostEstimator = () => {
   });
 
   const [costs, setCosts] = useState({ basic: null, standard: null, premium: null });
-
   const [showCosts, setShowCosts] = useState(false);
 
   const packageCosts = {
@@ -69,9 +72,7 @@ const CostEstimator = () => {
 
       if (response.ok && responseData.success) {
         toast.success('Form Submitted Successfully!');
-
         setShowCosts(true);
-
         setFormData({
           phone: '',
           name: '',
@@ -105,10 +106,29 @@ const CostEstimator = () => {
     }));
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Initialize AOS animations with a duration of 1000ms
+  }, []);
+
   return (
     <div className="cost-estimator-container">
+      <div
+        className="hero"
+        style={{
+          background: `url(${Costestimator}) no-repeat center center/cover`,
+        }}
+        data-aos="fade-down"
+      >
+        <h1 className="hero-title" data-aos="fade-up">
+        Cost Estimator
+        </h1>
+        {/* <h2 className="hero-subtitle" data-aos="fade-up" data-aos-delay="500">
+          Choose the best package for your dream project
+        </h2> */}
+      </div>
+
       <form className="cost-estimator-form" onSubmit={onSubmit}>
-        <h2>Cost Estimator</h2>
+        <h2><CalculatorOutlined /> Cost Estimator</h2>
 
         <div className="form-group">
           <label htmlFor="phone">Mobile Number</label>

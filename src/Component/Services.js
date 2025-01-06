@@ -1,56 +1,96 @@
-import React from 'react';
-import './Services.css';
-import Service1 from '../Component/Images/Service-1.webp'
-import Service2 from '../Component/Images/Service-2.webp'
-import Service3 from '../Component/Images/Service-3.webp'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+import "./Services.css";
+import Servicemain from "../Component/Images/Services.png"; // Background image for hero section
+import Service1 from "../Component/Images/Service-1.webp";
+import Service2 from "../Component/Images/Service-2.webp";
+import Service3 from "../Component/Images/Service-3.webp";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // Initialize AOS with duration and one-time animation
+  }, []);
+
   return (
-    <>
+    <div>
+      {/* Hero Section */}
+      <div
+        className="hero"
+        style={{
+          background: `url(${Servicemain}) no-repeat center center/cover`,
+        }}
+      >
+        <h1 className="hero-title" data-aos="fade-down">
+          Our Services
+        </h1>
+      </div>
+
+      {/* Services Section */}
       <div className="service-container">
-        <div className="service-header">
+        <div className="service-header" data-aos="fade-up">
           <h2>What We Do</h2>
           <hr />
         </div>
 
         <div className="services-wrapper">
-          <div className="service">
-          <img src={Service1} alt="Service1" loading="lazy"/>
+          {/* General Contract */}
+          <div className="service" data-aos="fade-right">
+            <img src={Service1} alt="Service1" loading="lazy" />
             <h5>General Contract</h5>
             <hr />
-            <p>We provide end-to-end general contracting services, managing everything from planning and procurement to execution and safety. Our experienced team ensures your project is completed on time, within budget, and to the highest quality standards. Trust us to handle every detail with precision and care.</p>
+            <p>
+              We provide end-to-end general contracting services, managing
+              everything from planning and procurement to execution and safety.
+            </p>
           </div>
 
-          <div className="service">
-          <img src={Service2} alt="Service2" loading="lazy"/>
+          {/* Project Planning */}
+          <div className="service" data-aos="fade-up">
+            <img src={Service2} alt="Service2" loading="lazy" />
             <h5>Project Planning</h5>
             <hr />
-            <p>Our project planning services ensure a seamless construction process, from initial concept to final execution. We handle scheduling, resource allocation, and risk management to keep your project on track. Let us bring your vision to life with expert precision and efficiency.</p>
+            <p>
+              Our project planning services ensure a seamless construction
+              process, from initial concept to final execution.
+            </p>
           </div>
 
-          <div className="service">
-          <img src={Service3} alt="Service3" loading="lazy"/>
+          {/* House Refurbishment */}
+          <div className="service" data-aos="fade-left">
+            <img src={Service3} alt="Service3" loading="lazy" />
             <h5>House Refurbishment</h5>
             <hr />
-            <p>We offer expert house refurbishment services, transforming your space with modern designs while preserving its character. From minor upgrades to full renovations, we handle every detail with precision. Enhance your home’s comfort, functionality, and value with our tailored solutions.</p>
+            <p>
+              We offer expert house refurbishment services, transforming your
+              space with modern designs while preserving its character.
+            </p>
           </div>
 
-          <div className="service">
-          <img src={Service1} alt="Service3" loading="lazy"/>
+          {/* Kitchen Remodeling */}
+          <div className="service" data-aos="zoom-in">
+            <img src={Service1} alt="Service3" loading="lazy" />
             <h5>Kitchen Remodeling</h5>
             <hr />
-            <p>Our kitchen remodeling services blend functionality with style, creating the perfect space for cooking and gathering. From modern designs to efficient layouts, we customize every detail to suit your needs. Upgrade your kitchen with quality craftsmanship and innovative solutions.</p>
+            <p>
+              Our kitchen remodeling services blend functionality with style,
+              creating the perfect space for cooking and gathering.
+            </p>
           </div>
 
-          <div className="service">
-          <img src={Service2} alt="Service3" loading="lazy"/>
+          {/* Interior Design */}
+          <div className="service" data-aos="fade-up">
+            <img src={Service2} alt="Service3" loading="lazy" />
             <h5>Interior Design</h5>
             <hr />
-            <p>Our interior design services bring your vision to life, creating elegant and functional spaces tailored to your style. We blend aesthetics with practicality, ensuring each room reflects your personality. Elevate your home’s ambiance with our expert design solutions.</p>
+            <p>
+              Our interior design services bring your vision to life, creating
+              elegant and functional spaces tailored to your style.
+            </p>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
